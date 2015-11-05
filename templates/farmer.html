@@ -1,0 +1,39 @@
+
+     
+<div class="container-fluid result-farmers">
+  <div class="container">
+    
+    <h1>{{ farmer.farm_name }}</h1>
+
+    <h3>{{ farmer.name }}</h3>
+
+    <p>{{ farmer.about_me }}</p>
+
+    <p> <i class="fa fa-envelope" ng-show="{{ farmer.email }}"></i> {{ farmer.email }}<br>
+            
+    <i class="fa fa-phone" ng-show="{{ farmer.phone }}"></i> {{ farmer.phone }} <br>
+
+    </p>
+          
+  <div class="product-wrapper" ng-show="{{ farmer.products }}">
+        <h3>Products</h3>
+
+        <hr>
+                
+        <div ng-repeat="product in farmer.products">
+        <!-- <img src="http://placehold.it/433x250"> -->
+          <div class="card-section">
+
+            <h3>{{ product.name }}</h3>
+                          
+          </div>  
+        </div>
+  </div>
+
+</div>
+
+                
+                
+
+                
+               

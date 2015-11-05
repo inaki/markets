@@ -1,0 +1,64 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+ul {
+    list-style: outside none none;
+    padding: 0px;
+}
+
+.angular-leaflet-map {
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+
+/*card code styles*/
+.card {
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 7px;
+}
+
+.list-markets li:hover {
+	background: tomato;
+}
+.card h3 {
+	margin: 8px;
+}
+.card p {
+	margin: 5px;
+}
+
+.market-card {
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+.md-primary.md-button.md-default-theme.add-market {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+
+/*form code styles*/
+#add-market-wrapper {
+	
+}
+#add-market-wrapper .form-wrapper {
+	box-shadow: 0px 0px 6px #888888;
+	color: #88888A;
+	background: white;
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+}
+md-input-container label  {
+	color: #88888A;
+}
+md-input-container .md-input {
+	border-color: #88888A;
+}

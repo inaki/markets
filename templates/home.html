@@ -1,0 +1,20 @@
+
+<div layout="row" layout-sm="column">
+      <div flex="30">
+        <ul class="list-markets">
+          <li ng-repeat="market in markets">
+            <div class="card">
+             <!-- <img src="http://placehold.it/433x215"> -->
+            <h3><span ui-sref="market({ marketID: market.id})">{{market.title}}</span></h3>
+            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{market.address}}</p>
+            <p><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{market.opentimes}}</p>
+          </div>
+          <md-divider ng-if="!$last"></md-divider>
+          </li>
+        </ul>
+      </div>
+
+      <div flex="70">
+        <leaflet markers="markers" center="westsac" height="620px"></leaflet>
+      </div>
+</div>
