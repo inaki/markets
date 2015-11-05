@@ -71,7 +71,7 @@ angular.module('marketsApp', ['ui.bootstrap','ui.router','nemLogging','leaflet-d
           lng: data[i].longitude,
           message: data[i].title + "<br/>" + data[i].address + "<br/>" + data[i].opentimes,
           icon: {
-            iconUrl: '../assets/images/icon.png'
+            iconUrl: 'assets/images/icon.png'
           }
         });
       } 
